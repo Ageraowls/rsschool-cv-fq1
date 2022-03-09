@@ -6,11 +6,22 @@ $paynes-gray: rgb(64, 64, 79);
 $main-font-size: 20px;
 $title-font: 'Jockey One', sans-serif;
 $main-font-family: 'Smooch Sans', sans-serif;
+$main-padding: 0 20px;
+$main-color-text: #000;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color-text;
 }
 
 li {
@@ -19,7 +30,7 @@ li {
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: $main-color;
   font-size: $main-font-size;
   font-family: $main-font-family;
@@ -29,6 +40,13 @@ body {
 
   .wrapper {
     max-width: 1200px;
+    background-color: rgba(64, 64, 79, 0.1);
+  }
+
+  main {
+    h2 {
+      margin: 20px 0;
+    }
   }
 }
 
@@ -38,5 +56,82 @@ h3 {
   font-family: $title-font;
 }
 
-.header {
+.profile {
+  display: flex;
+  border-bottom: solid 2px rgb(64, 64, 79);
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  padding: $main-padding;
+  .contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.contacts {
+  .mail,
+  .discord,
+  .github {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+}
+
+.mail:hover,
+.discord:hover,
+.github:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  display: flex;
+  hr {
+    width: 5px;
+    background: rgb(64, 64, 79);
+    margin-right: 50px;
+  }
+}
+
+.myself {
+  transform: rotate(-90deg);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.sub-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: $main-padding;
+}
+
+.learn-js,
+.rsschool-zero,
+.rsschool-one {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 10px 0;
+}
+
+.date {
+}
+
+.text {
+  transition: all 0.3s linear;
+}
+.text:hover {
+  transform: scale(1.1);
 }
