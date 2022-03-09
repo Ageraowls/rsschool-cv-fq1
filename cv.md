@@ -25,3 +25,30 @@ My name is **Andrew**. I am **25** years old. I am a **communicative** person. M
 - [RS Schools Course «JavaScript/Front-end. Stage 0»](https://rs.school/js-stage0/)
 - [RS Schools Course «JavaScript/Front-end. Stage 1»](https://rs.school/js/) _(in progress)_
 - [JavaScript + React from scratch to result](https://www.udemy.com/course/javascript_full/) _(in progress)_
+
+## **Code example**
+
+**Count the smiley faces! KATA from CODEWARS:** _Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces._
+
+```
+function countSmileys(arr) {
+  const lib = [':)', ';)', ':-)', ';-)', ';~)', ':~)', ':D', ';D', ':-D', ':~D', ';-D', ';~D'];
+  let result = [];
+
+  arr.map((item) => {
+    if (lib.includes(item)) {
+      result.push(item);
+    }
+  });
+  return result.length;
+}
+```
+
+## **Work experience**
+
+No work experience yet
+
+## **Languages**
+
+**English** - A2 (pre-intermediate)<br>
+**Russian** - Native speaker
