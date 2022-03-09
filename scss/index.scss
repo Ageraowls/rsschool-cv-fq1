@@ -1,0 +1,42 @@
+/* variables */
+
+$main-color: rgb(245, 245, 245);
+$silver-gray: rgb(192, 192, 192);
+$paynes-gray: rgb(64, 64, 79);
+$main-font-size: 20px;
+$title-font: 'Jockey One', sans-serif;
+$main-font-family: 'Smooch Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $main-color;
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+}
+
+.header {
+}
