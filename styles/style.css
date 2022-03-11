@@ -32,10 +32,6 @@ body .wrapper {
   max-width: 1200px;
   background-color: rgba(64, 64, 79, 0.1);
 }
-body main h2 {
-  margin: 20px 0;
-}
-
 h1,
 h2,
 h3 {
@@ -86,12 +82,8 @@ h3 {
 }
 
 .myself {
-  transform: rotate(-90deg);
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .sub-wrapper {
@@ -99,6 +91,9 @@ h3 {
   flex-direction: column;
   gap: 50px;
   padding: 0 20px;
+  background-color: rgba(64, 64, 79, 0.1);
+  box-shadow: 0 0 2px;
+  margin: 10px 40px 0 0;
 }
 
 .learn-js,
@@ -116,6 +111,26 @@ h3 {
 
 .text:hover {
   transform: scale(1.1);
+}
+
+.educational,
+.skills,
+.code-example,
+.languages,
+.interest {
+  background-color: rgba(64, 64, 79, 0.1);
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px;
+  padding: 10px 10px;
+}
+
+.languages .en,
+.languages .ru {
+  display: block;
+}
+.languages .languages-title {
+  font-size: 23px;
+  font-family: "Jockey One", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@ $main-font-size: 20px;
 $title-font: 'Jockey One', sans-serif;
 $main-font-family: 'Smooch Sans', sans-serif;
 $main-padding: 0 20px;
+$sub-padding: 10px 10px;
 $main-color-text: #000;
 
 * {
@@ -44,9 +45,6 @@ body {
   }
 
   main {
-    h2 {
-      margin: 20px 0;
-    }
   }
 }
 
@@ -102,12 +100,8 @@ h3 {
 }
 
 .myself {
-  transform: rotate(-90deg);
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
+  padding: $main-padding;
+  text-align: center;
 }
 
 .sub-wrapper {
@@ -115,6 +109,9 @@ h3 {
   flex-direction: column;
   gap: 50px;
   padding: $main-padding;
+  background-color: rgba(64, 64, 79, 0.1);
+  box-shadow: 0 0 2px;
+  margin: 10px 40px 0 0;
 }
 
 .learn-js,
@@ -134,4 +131,26 @@ h3 {
 }
 .text:hover {
   transform: scale(1.1);
+}
+
+.educational,
+.skills,
+.code-example,
+.languages,
+.interest {
+  background-color: rgba(64, 64, 79, 0.1);
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px;
+  padding: $sub-padding;
+}
+
+.languages {
+  .en,
+  .ru {
+    display: block;
+  }
+  .languages-title {
+    font-size: 23px;
+    font-family: $title-font;
+  }
 }
