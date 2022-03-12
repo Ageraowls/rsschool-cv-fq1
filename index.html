@@ -65,7 +65,7 @@
 						</p>
 					</div>
 					<div class="rsschool-zero">
-						<div class="date">13/12/2021-13/03/2022</div>
+						<div class="date">13/12/2021-11/03/2022</div>
 						<p class="text"><a href="https://rs.school/js-stage0/" target="_blank">RS Schools Course
 								«JavaScript/Front-end. Stage 0»</a>
 						</p>
@@ -91,6 +91,29 @@
 					<h2>Code example</h2>
 					<p class="code-example-text">Count the smiley faces! KATA from CODEWARS: Given an array (arr) as an argument
 						complete the function countSmileys that should return the total number of smiling faces.</p>
+					<div class="macos-window">
+						<div class="macos-window-line">
+							<div class="circles">
+								<div class="red"></div>
+								<div class="yellow"></div>
+								<div class="green"></div>
+							</div>
+						</div>
+						<pre>
+<code class="code">function countSmileys(arr) {
+	const lib = [':)', ';)', ':-)', ';-)', ';~)', ':~)', ':D', ';D', ':-D', ':~D', ';-D', ';~D'];
+	let result = [];
+								
+	arr.map((item) => {
+		if (lib.includes(item)) {
+			result.push(item);
+		}
+	});
+	return result.length;
+}
+							</code>
+						</pre>
+					</div>
 				</div>
 				<div class="languages">
 					<h2>Languages</h2>

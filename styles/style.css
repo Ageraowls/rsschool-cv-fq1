@@ -32,6 +32,7 @@ body .wrapper {
   max-width: 1200px;
   background-color: rgba(64, 64, 79, 0.1);
 }
+
 h1,
 h2,
 h3 {
@@ -131,6 +132,53 @@ h3 {
 .languages .languages-title {
   font-size: 23px;
   font-family: "Jockey One", sans-serif;
+}
+
+.macos-window {
+  width: 100%;
+  height: 280px;
+  box-shadow: 0 0 2px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+.macos-window .macos-window-line {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(64, 64, 79, 0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: solid 0.5px #000;
+}
+
+.circles {
+  display: flex;
+  gap: 3px;
+}
+.circles .red,
+.circles .yellow,
+.circles .green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+  margin: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.red {
+  background: radial-gradient(circle, white 0%, #f11313 95%);
+}
+
+.yellow {
+  background: radial-gradient(circle, #ffef00 0%, white 95%);
+}
+
+.green {
+  background: radial-gradient(circle, white 0%, #1aff00 95%);
+}
+
+.code {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
