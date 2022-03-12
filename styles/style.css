@@ -118,7 +118,7 @@ h3 {
 .skills,
 .code-example,
 .languages,
-.interest {
+.projects {
   background-color: rgba(64, 64, 79, 0.1);
   margin-top: 10px;
   box-shadow: 1px 1px 2px;
@@ -179,6 +179,20 @@ h3 {
 
 .code {
   font-size: 14px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.project-list img {
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.project-list img:hover {
+  transform: scale(1.09);
 }
 
 /*# sourceMappingURL=style.css.map */
