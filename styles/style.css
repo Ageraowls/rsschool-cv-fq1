@@ -94,7 +94,7 @@ h3 {
   padding: 0 20px;
   background-color: rgba(64, 64, 79, 0.1);
   box-shadow: 0 0 2px;
-  margin: 10px 40px 0 0;
+  margin: 10px 40px 10px 0;
 }
 
 .learn-js,
@@ -118,7 +118,8 @@ h3 {
 .skills,
 .code-example,
 .languages,
-.projects {
+.projects,
+.interest {
   background-color: rgba(64, 64, 79, 0.1);
   margin-top: 10px;
   box-shadow: 1px 1px 2px;
@@ -193,6 +194,29 @@ h3 {
 }
 .project-list img:hover {
   transform: scale(1.09);
+}
+
+/* .active {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+} */
+.interest {
+  margin-bottom: 10px;
+}
+
+.interest-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.interest-cards svg {
+  width: 80px;
+  height: 80px;
+}
+.interest-cards p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
