@@ -40,7 +40,7 @@ body {
   justify-content: center;
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 100%;
     background-color: rgba(64, 64, 79, 0.1);
   }
 }
@@ -55,7 +55,6 @@ h3 {
   display: flex;
   border-bottom: solid 2px rgb(64, 64, 79);
 }
-
 .profile__info {
   display: flex;
   flex-direction: column;

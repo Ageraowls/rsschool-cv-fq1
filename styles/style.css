@@ -29,7 +29,7 @@ body {
   justify-content: center;
 }
 body .wrapper {
-  max-width: 1200px;
+  max-width: 100%;
   background-color: rgba(64, 64, 79, 0.1);
 }
 
