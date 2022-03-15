@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Smooch+Sans&display=swap" rel="stylesheet">
+	<title>CV</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="profile">
+				<div class="profile__info">
+					<h3 class="profile-title">Profile</h3>
+					<p class="profile__text">My name is Andrew. I am 25 years old. I am a communicative person. My best qualities
+						are reliable, hard-working and creativity. If I am interested in something, I plunge headlong into this
+						process. I changed a lot of jobs and came to the decision that I want to become a web developer. And I’m
+						going to make my dream.</p>
+					<div class="profile__contacts">
+						<ul class="contacts">
+							<li>
+								<a href="mailto:shumeiko.drew@gmail.com" class="contacts__link>">
+									<svg class="mail">
+										<use xlink:href="assets/svg/sprite.svg#mail"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://support.discord.com/hc/ru/articles/360061878534-Find-Your-Friends-FAQ"
+									class="contacts__link>" target="_blank">
+									<svg class="discord">
+										<use xlink:href="assets/svg/sprite.svg#discord"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/Ageraowls" class="contacts__link>" target="_blank">
+									<svg class="github">
+										<use xlink:href="assets/svg/sprite.svg#github"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<img src="assets/img/avatar.jpg" alt="">
+			</div>
+		</header>
+		<main class="main">
+			<div class="myself-wrapper">
+				<div class="myself">
+					<h1 class="myself-title">ANDREW SHUMEIKO</h1>
+					<p class="myself-contacts">Russia, Yekaterinburg</p>
+				</div>
+				<div class="cert">
+					<h2>CERTIFICATES</h2>
+					<div class="cert-wrapper">
+						<ul class="cert-list">
+							<li class="cert-item rss">
+								<svg class="cert">
+									<use xlink:href="assets/svg/sprite.svg#cert"></use>
+								</svg>
+								<p>RSSCHOOL STAGE 0</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal">
+					<div class="modal__overlay">
+						<div class="modal__content">
+							<span class="modal__close">&times;</span>
+							<img src="assets/img/rsszero.png" alt="rsszero">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="sub-wrapper">
+				<div class="educational">
+					<h2 class="educationl-title">Educational</h2>
+					<div class="learn-js">
+						<div class="date">2021-...</div>
+						<p class="text"><a href="https://learn.javascript.ru/" target="_blank">The Modern JavaScript Tutorial</a>
+						</p>
+					</div>
+					<div class="rsschool-zero">
+						<div class="date">13/12/2021-11/03/2022</div>
+						<p class="text"><a href="https://rs.school/js-stage0/" target="_blank">RS Schools Course
+								«JavaScript/Front-end. Stage 0»</a>
+						</p>
+					</div>
+					<div class="rsschool-one">
+						<div class="date">13/03/2022-...</div>
+						<p class="text"><a href="https://rs.school/js/" target="_blank">RS Schools Course «JavaScript/Front-end.
+								Stage 1»</a>
+						</p>
+					</div>
+				</div>
+				<div class="skills">
+					<h2 class="skills-title">Skills</h2>
+					<ul class="skills-list">
+						<li>HTML5, CSS3</li>
+						<li>SASS, SCSS</li>
+						<li>JavaScript Basic</li>
+						<li>Git/GitHub</li>
+						<li>Figma, photoshop, 3ds max</li>
+					</ul>
+				</div>
+				<div class="code-example">
+					<h2>Code example</h2>
+					<p class="code-example-text">Count the smiley faces! KATA from CODEWARS: Given an array (arr) as an argument
+						complete the function countSmileys that should return the total number of smiling faces.</p>
+					<div class="macos-window">
+						<div class="macos-window-line">
+							<div class="circles">
+								<div class="red"></div>
+								<div class="yellow"></div>
+								<div class="green"></div>
+							</div>
+						</div>
+						<pre>
+<code class="code">function countSmileys(arr) {
+	const lib = [':)', ';)', ':-)', ';-)', ';~)', ':~)', ':D', ';D', ':-D', ':~D', ';-D', ';~D'];
+	let result = [];
+								
+	arr.map((item) => {
+		if (lib.includes(item)) {
+			result.push(item);
+		}
+	});
+	return result.length;
+}
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="languages">
+					<h2>Languages</h2>
+					<span class="en"><span class="languages-title">English</span> - A2 (pre-intermediate)</span>
+					<span class="ru"><span class="languages-title">Russian</span> - Native speaker</span>
+				</div>
+				<div class="projects">
+					<h2>Projects</h2>
+					<!-- <button class="show">CLICK</button> -->
+					<ul class="project-list">
+						<li class="project-item"><a href="https://ageraowls.github.io/rsschool-stage-0/memory-game/"
+								target="_blank"><img src="assets/img/memory.png" alt="memory-game"></a>MEMORY GAME</li>
+						<li class="project-item"><a href="https://ageraowls.github.io/rsschool-stage-0/portfolio/"
+								target="_blank"><img src="assets/img/portfolio.png" alt="portfolio"></a>PORTFOLIO</li>
+						<li class="project-item"><a href="https://ageraowls.github.io/rsschool-stage-0/random-jokes/"
+								target="_blank"><img src="assets/img/quotes.png" alt="quotes"></a>RANDOM QUOTES</li>
+						<li class="project-item"><a href="https://ageraowls.github.io/rsschool-stage-0/audio-player/"
+								target="_blank"><img src="assets/img/audio.png" alt="audio"></a>AUDIO PLAYER</li>
+					</ul>
+				</div>
+				<div class="interest">
+					<h2>Interest</h2>
+					<div class="interest-cards">
+						<div class="card">
+							<svg class="technology">
+								<use xlink:href="assets/svg/sprite.svg#technology"></use>
+							</svg>
+							<p>technology</p>
+						</div>
+						<div class="card">
+							<svg class="coding">
+								<use xlink:href="assets/svg/sprite.svg#coding"></use>
+							</svg>
+							<p>coding</p>
+						</div>
+						<div class="card">
+							<svg class="design">
+								<use xlink:href="assets/svg/sprite.svg#design"></use>
+							</svg>
+							<p>design</p>
+						</div>
+						<div class="card">
+							<svg class="travel">
+								<use xlink:href="assets/svg/sprite.svg#travel"></use>
+							</svg>
+							<p>travel</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

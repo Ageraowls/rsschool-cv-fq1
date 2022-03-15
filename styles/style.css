@@ -1,0 +1,290 @@
+/* variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+body .wrapper {
+  max-width: 100%;
+  background-color: rgba(64, 64, 79, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Jockey One", sans-serif;
+}
+
+.profile {
+  display: flex;
+  border-bottom: solid 2px #40404f;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  padding: 0 20px;
+}
+.profile__info .contacts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacts .mail,
+.contacts .discord,
+.contacts .github {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.mail:hover,
+.discord:hover,
+.github:hover,
+.rss:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  display: flex;
+}
+.main hr {
+  width: 5px;
+  background: #40404f;
+  margin-right: 50px;
+}
+
+.myself {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sub-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 20px;
+  background-color: rgba(64, 64, 79, 0.1);
+  box-shadow: 0 0 2px;
+  margin: 10px 40px 10px 0;
+}
+
+.learn-js,
+.rsschool-zero,
+.rsschool-one {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 10px 0;
+}
+
+.text {
+  transition: all 0.3s linear;
+}
+
+.text:hover {
+  transform: scale(1.1);
+}
+
+.educational,
+.skills,
+.code-example,
+.languages,
+.projects,
+.interest {
+  background-color: rgba(64, 64, 79, 0.1);
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px;
+  padding: 10px 10px;
+}
+
+.languages .en,
+.languages .ru {
+  display: block;
+}
+.languages .languages-title {
+  font-size: 23px;
+  font-family: "Jockey One", sans-serif;
+}
+
+.macos-window {
+  width: 100%;
+  height: 280px;
+  box-shadow: 0 0 2px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+.macos-window .macos-window-line {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(64, 64, 79, 0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: solid 0.5px #000;
+}
+
+.circles {
+  display: flex;
+  gap: 3px;
+}
+.circles .red,
+.circles .yellow,
+.circles .green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+  margin: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.red {
+  background: radial-gradient(circle, white 0%, #f11313 95%);
+}
+
+.yellow {
+  background: radial-gradient(circle, #ffef00 0%, white 95%);
+}
+
+.green {
+  background: radial-gradient(circle, white 0%, #1aff00 95%);
+}
+
+.code {
+  font-size: 14px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.project-list img {
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.project-list img:hover {
+  transform: scale(1.09);
+}
+
+/* .active {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+} */
+.interest {
+  margin-bottom: 10px;
+}
+
+.interest-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.interest-cards svg {
+  width: 80px;
+  height: 80px;
+}
+.interest-cards p {
+  text-align: center;
+}
+
+.myself-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.myself-wrapper .cert {
+  text-align: center;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cert-list svg {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.cert-list p {
+  text-align: center;
+}
+.cert-list li {
+  transition: all 0.3s linear;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+}
+.modal__content img {
+  width: 500px;
+  box-shadow: 0 0 2px;
+}
+
+.modal__close {
+  font-size: 50px;
+  position: absolute;
+  right: 1%;
+  color: #fff;
+  top: -5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 4;
+}
+
+.modal__close:hover {
+  transform: scale(1.3);
+}
+
+/*# sourceMappingURL=style.css.map */

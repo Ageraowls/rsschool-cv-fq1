@@ -1,1 +1,1 @@
-https://ageraowls.github.io/rsschool-cv/cv
+https://ageraowls.github.io/rsschool-cv/
